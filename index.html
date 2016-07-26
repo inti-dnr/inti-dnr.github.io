@@ -217,7 +217,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div id="accordion" class="panel-group">
-                    <div class="panel panel-default">
+                    <div class="panel panel-success">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Открыть 1-й слайд</a>
@@ -229,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Открыть 2-й слайд</a>
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-danger">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Открыть 3-й слайд</a>
@@ -256,7 +256,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
             </div>
         </div>
     </div>
@@ -266,6 +266,25 @@
     <br>
     <br>
     <br>
+    <!--Создаем модельное окно-->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h4 class="modal-title">Название окна</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Это модальное окно</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
