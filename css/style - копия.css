@@ -2,6 +2,18 @@ h1 {
         font-family: 'Pattaya', sans-serif;
    }
 
+a.spoiler:after{
+    content:" [-]";
+}
+
+a.spoiler.collapsed:after{
+    content:" [+]";
+}
+
+.nav-tabs{
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 768px){
     .masonry[data-columns]::before{
         content: '1 .col-xs-12';
@@ -26,7 +38,34 @@ h1 {
     }
 }
 
-.head_news{
+head_news{
     width: 1024px;
-    margin:auto;
+    margin: auto;
 }
+
+p{
+    color: black;
+}
+
+
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
